@@ -37,8 +37,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/${{ github.actor }}/global-md:latest  # Convert repo name to lowercase
 
       # Step 6 (optional): Test the Docker container by running it locally
       - name: Run the container (optional)
-        run: docker run -d -p 3000:3000 ghcr.io/${{ github.repository }}:latest
+        run: docker run -d -p 3000:3000 ghcr.io/${{ github.actor }}/global-md:latest
