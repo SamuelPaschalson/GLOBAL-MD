@@ -41,4 +41,4 @@ jobs:
 
       # Step 6 (optional): Test the Docker container by running it locally
       - name: Run the container (optional)
-        run: docker run -d -p 3000:3000 ghcr.io/${{ github.actor | toLowerCase }}/global-md:latest
+        run: docker run -d -p 3000:3000 ghcr.io/samuelpaschalson/global-md:latest
